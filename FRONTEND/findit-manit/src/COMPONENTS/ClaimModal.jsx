@@ -49,7 +49,7 @@ if (!item || !user) return;
 
       const res =
         await axios.get(
-          `http://localhost:5000/api/claims/check/${item._id}/${user.id}`
+          `https://findit-manit-backend-ab8s.onrender.com/api/claims/check/${item._id}/${user.id}`
         );
 
       setAlreadyClaimed(
@@ -83,7 +83,7 @@ return;
     setLoading(true);
 
     await axios.post(
-      "http://localhost:5000/api/claims",
+      "https://findit-manit-backend-ab8s.onrender.com/api/claims",
       {
         itemId: item._id,
 

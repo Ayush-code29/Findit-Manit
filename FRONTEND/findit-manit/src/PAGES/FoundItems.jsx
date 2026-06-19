@@ -25,7 +25,7 @@ function FoundItems() {
   const fetchFoundItems = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/found-items"
+        "https://findit-manit-backend-ab8s.onrender.com/api/found-items"
       );
 
       setItems(

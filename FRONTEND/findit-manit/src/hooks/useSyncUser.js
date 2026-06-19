@@ -9,7 +9,7 @@ function useSyncUser() {
     if (!user) return;
 
     axios.post(
-      "http://localhost:5000/api/users/sync-user",
+      "https://findit-manit-backend-ab8s.onrender.com/api/users/sync-user",
       {
         clerkId: user.id,
         name: user.fullName,

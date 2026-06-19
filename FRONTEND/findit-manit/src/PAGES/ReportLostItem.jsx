@@ -118,7 +118,7 @@ function ReportLostItem() {
       }
 
       const response = await axios.post(
-        "http://localhost:5000/api/lost-items",
+        "https://findit-manit-backend-ab8s.onrender.com/api/lost-items",
         payload,
         {
           headers: {

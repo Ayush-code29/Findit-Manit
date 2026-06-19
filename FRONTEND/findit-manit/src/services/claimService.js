@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API =
-  "http://localhost:5000/api/claims";
+  "https://findit-manit-backend-ab8s.onrender.com/api/claims";
 
 export const createClaim =
   async (claimData) => {

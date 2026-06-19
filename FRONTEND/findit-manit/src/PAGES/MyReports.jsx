@@ -20,10 +20,10 @@ function MyReports() {
     try {
       const [lostRes, foundRes] = await Promise.all([
         axios.get(
-          `http://localhost:5000/api/lost-items/user/${user.id}`
+          `https://findit-manit-backend-ab8s.onrender.com/api/lost-items/user/${user.id}`
         ),
         axios.get(
-          `http://localhost:5000/api/found-items/user/${user.id}`
+          `https://findit-manit-backend-ab8s.onrender.com/api/found-items/user/${user.id}`
         ),
       ]);
 
@@ -51,7 +51,7 @@ function MyReports() {
       if (!confirmDelete) return;
 
       await axios.delete(
-        `http://localhost:5000/api/lost-items/${id}`
+        `https://findit-manit-backend-ab8s.onrender.com/api/lost-items/${id}`
       );
 
       setLostItems((prev) =>
@@ -71,7 +71,7 @@ function MyReports() {
       if (!confirmDelete) return;
 
       await axios.delete(
-        `http://localhost:5000/api/found-items/${id}`
+        `https://findit-manit-backend-ab8s.onrender.com/api/found-items/${id}`
       );
 
       setFoundItems((prev) =>

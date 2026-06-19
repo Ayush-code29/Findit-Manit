@@ -19,7 +19,7 @@ function NotificationDropdown({
       );
 
       await axios.patch(
-        `http://localhost:5000/api/claims/${claimId}/approve`
+        `https://findit-manit-backend-ab8s.onrender.com/api/claims/${claimId}/approve`
       );
 
       alert("Claim Approved");
@@ -44,7 +44,7 @@ function NotificationDropdown({
       );
 
       await axios.patch(
-        `http://localhost:5000/api/claims/${claimId}/reject`
+        `https://findit-manit-backend-ab8s.onrender.com/api/claims/${claimId}/reject`
       );
 
       alert("Claim Rejected");

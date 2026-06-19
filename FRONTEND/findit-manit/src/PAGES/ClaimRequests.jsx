@@ -19,7 +19,7 @@ function ClaimRequests() {
   const fetchClaims = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/claims/user/${user.id}`
+        `https://findit-manit-backend-ab8s.onrender.com/api/claims/user/${user.id}`
       );
 
       setClaims(res.data);
@@ -35,7 +35,7 @@ function ClaimRequests() {
       setActionLoading(claimId);
 
       await axios.patch(
-        `http://localhost:5000/api/claims/${claimId}/approve`
+        `https://findit-manit-backend-ab8s.onrender.com/api/claims/${claimId}/approve`
       );
 
       alert("Claim Approved");
@@ -53,7 +53,7 @@ function ClaimRequests() {
       setActionLoading(claimId);
 
       await axios.patch(
-        `http://localhost:5000/api/claims/${claimId}/reject`
+        `https://findit-manit-backend-ab8s.onrender.com/api/claims/${claimId}/reject`
       );
 
       alert("Claim Rejected");

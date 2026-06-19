@@ -17,7 +17,7 @@ function Notifications() {
       try {
         const res =
           await axios.get(
-            `http://localhost:5000/api/notifications/${user.id}`
+            `https://findit-manit-backend-ab8s.onrender.com/api/notifications/${user.id}`
           );
 
         setNotifications(res.data);
@@ -26,7 +26,7 @@ function Notifications() {
         for (const notification of res.data) {
           if (!notification.read) {
             await axios.patch(
-              `http://localhost:5000/api/notifications/read/${notification._id}`
+              `https://findit-manit-backend-ab8s.onrender.com/api/notifications/read/${notification._id}`
             );
           }
         }
