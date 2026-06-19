@@ -7,7 +7,7 @@ import "@fontsource/space-grotesk";
 import { ClerkProvider } from "@clerk/clerk-react";
 
 const PUBLISHABLE_KEY =
-  import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
+  "pk_test_aW5maW5pdGUtcG9sbGl3b2ctMjUuY2xlcmsuYWNjb3VudHMuZGV2JA";
 
 if (!PUBLISHABLE_KEY) {
   throw new Error("Missing Clerk Publishable Key");
@@ -19,7 +19,7 @@ if(theme==="dark"){
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
+    <ClerkProvider publishableKey="pk_test_aW5maW5pdGUtcG9sbGl3b2ctMjUuY2xlcmsuYWNjb3VudHMuZGV2JA">
       <App />
     </ClerkProvider>
   </React.StrictMode>
