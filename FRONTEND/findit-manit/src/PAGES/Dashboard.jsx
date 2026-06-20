@@ -111,7 +111,7 @@ function Dashboard() {
               </h2>
 
               <p className="text-gray-500 dark:text-gray-400 mt-2">
-                Lost something? Create a report instantly.
+                Lost something? Create a report now.
               </p>
 
             </div>
